@@ -10,7 +10,7 @@ const ImageBar = () => {
   return (
     <React.Fragment>
       <div className="row d-flex justify-content-around p-3">
-          <img src={rightImage} alt="show label"></img>
+          <img src={leftImage} alt="show label"></img>
       </div>
     </React.Fragment>
   );

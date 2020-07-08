@@ -4,14 +4,15 @@ import Streaming from "../components/Streaming";
 import ImageBar from "../components/ImageBar";
 
 const StreamingView = () => {
-
-    return(
-        <React.Fragment>
-        <ImageBar/>
-        <Streaming/>
-        <ButtonBox/>
-        </React.Fragment>
-    )
+  return (
+    <React.Fragment>
+      <div className="mt-4 p-3">
+        <ImageBar />
+        <Streaming />
+        <ButtonBox />
+      </div>
+    </React.Fragment>
+  );
 };
 
 export default StreamingView;

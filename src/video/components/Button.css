@@ -1,18 +1,16 @@
 .button {
-  font: inherit;
-  padding: 0.5rem 1.5rem;
-  border: 1px solid #ff0055;
-  border-radius: 4px;
-  background: #ff0055;
+  padding: 6px 45px;
+  background: rgba(200, 200, 200, 0);
   color: white;
   cursor: pointer;
-  margin-right: 1rem;
+  /* margin: 10px 250px 20px; */
   text-decoration: none;
-  display: inline-block;
-  width: 75%;
+  /* display: inline-block; */
+  /* width: 75%; */
   border-radius: 25px;
   text-align: center;
   font-family: AlegreyaSansSC-BoldItalic;
+  text-decoration: none;
 }
 
 .button:focus {
@@ -21,8 +19,8 @@
 
 .button:hover,
 .button:active {
-  background: #ff4382;
-  border-color: #ff4382;
+  background: rgba(200, 200, 200, 0);
+  border: 1px solid rgba(200, 200, 200, 0.25);
 }
 
 .button--inverse {
@@ -48,6 +46,8 @@
 }
 
 .button--whatsapp {
+  text-decoration: none;
+  width: 80%;
   background: rgb(13, 237, 143);
   background: linear-gradient(
     200deg,
@@ -59,34 +59,41 @@
 
 .button--whatsapp:hover,
 .button--whatsapp:active {
-    background: rgb(13, 237, 143);
-    background: linear-gradient(
-      200deg,
-      rgb(13, 182, 111) 0%,
-      rgb(9, 202, 38) 100%
-    );
+  text-decoration: none;
+  color: white;
+  background: rgb(13, 237, 143);
+  background: linear-gradient(
+    200deg,
+    rgb(13, 182, 111) 0%,
+    rgb(9, 202, 38) 100%
+  );
 }
 
 .button--buyTicket {
-  background: rgb(234, 237, 13);
+  text-decoration: none;
+  color: #20f82a;
+  /* background: rgb(234, 237, 13);
   background: linear-gradient(
     200deg,
-    rgba(234, 237, 13, 1) 0%,
-    rgba(243, 199, 9, 1) 51%,
+    rgb(147, 150, 17) 0%,
+    rgb(180, 108, 13) 51%,
     rgba(251, 6, 6, 1) 100%
-  );
-  border-color: #3feb47;
+  ); */
+  border: 2px solid #20f82a;
 }
 
 .button--buyTicket:hover,
 .button--buyTicket:active {
-    background: rgb(234, 237, 13);
-    background: linear-gradient(
-      200deg,
-      rgb(242, 245, 68) 0%,
-      rgb(180, 148, 4) 51%,
-      rgb(168, 5, 5) 100%
-    );
+  text-decoration: none;
+  color: white;
+  /* background: rgb(234, 237, 13);
+  background: linear-gradient(
+    200deg,
+    rgb(242, 245, 68) 0%,
+    rgb(180, 148, 4) 51%,
+    rgb(168, 5, 5) 100%
+  ); */
+  border: 2px solid #52fd5a;
 }
 
 .button:disabled,
@@ -104,4 +111,24 @@
 
 .button--big {
   font-size: 1.5rem;
+}
+
+.button--float {
+  text-decoration: none;
+  position: fixed;
+  /* width: 60px;
+  height: 60px; */
+  bottom: 20px;
+  right: 5px;
+  background-color: none;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  /* box-shadow: 2px 2px 3px #999; */
+}
+.image-logo {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  /* width: 410%; */
 }

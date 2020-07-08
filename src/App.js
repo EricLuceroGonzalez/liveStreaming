@@ -9,17 +9,28 @@ import {
 
 import "./App.css";
 import StreamingView from "./video/pages/StreamingView";
-import Streaming from "./video/components/Streaming";
+import ShowWindowDimensions from "./shared/ShowWindowDim";
+import UserBuyTicket from "./user/UserBuyTicket";
 
 function App() {
   return (
     <Router>
+    <div
+    style={{
+      position: "fixed",
+      zIndex: "1000",
+      color: "white",
+      fontFamily: "monospace",
+    }}
+  >
+    <ShowWindowDimensions />
+  </div>
       <Switch>
         <Route path="/" exact>
           <StreamingView />
         </Route>
         <Route path="/liveStreaming" exact>
-          <Streaming />
+          <UserBuyTicket/>
         </Route>
         <Redirect to="/"></Redirect>
       </Switch>
