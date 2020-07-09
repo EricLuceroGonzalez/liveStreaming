@@ -6,18 +6,16 @@ const ButtonBox = () => {
     <React.Fragment>
       <div className="mt-5 row d-flex">
         <div
-          className="col-5 col-sm-6"
-          style={{ border: "1px solid red" }}
+          className="col-4 col-sm-6"
         >
-          <Button href="https://wa.link/aykk0m" whatsapp size="big">
+          <Button href="https://wa.link/aykk0m" whatsapp size="small">
             WhatsApp
           </Button>
         </div>
         <div
-          className="col-7 col-sm-6"
-          style={{ border: "1px solid blue" }}
+          className="col-8 col-sm-6"
         >
-          <Button to={"/liveStreaming"} buyTicket size="big">
+          <Button to={"/liveStreaming"} buyTicket size="small">
             Comprar boleto ahora
           </Button>
         </div>
