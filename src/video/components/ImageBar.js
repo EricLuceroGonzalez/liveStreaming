@@ -12,8 +12,9 @@ const ImageBar = () => {
 
   return (
     <React.Fragment>
-      <div className="row d-flex justify-content-around p-3">
-          <img src={bannerGif} alt="show label"></img>
+      <div className="col-12 p-3 mr-auto ml-auto">
+          <img width='100%' height='auto'
+          src={bannerGif} alt="show label"></img>
       </div>
     </React.Fragment>
   );
