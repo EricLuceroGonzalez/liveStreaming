@@ -19,7 +19,7 @@ function App() {
     style={{
       position: "fixed",
       zIndex: "1000",
-      color: "white",
+      color: "purple",
       fontFamily: "monospace",
     }}
   >
