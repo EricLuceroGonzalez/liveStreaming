@@ -5,17 +5,13 @@ const ButtonBox = () => {
   return (
     <React.Fragment>
       <div className="mt-5 row d-flex">
-        <div
-          className="col-4 col-sm-6"
-        >
-          <Button href="https://wa.link/aykk0m" whatsapp size="small">
+        <div className="col-4 col-sm-6 bordea">
+          <Button href="https://wa.link/aykk0m" whatsapp size="big">
             WhatsApp
           </Button>
         </div>
-        <div
-          className="col-8 col-sm-6"
-        >
-          <Button to={"/liveStreaming"} buyTicket size="small">
+        <div className="col-8 col-sm-6 bordea">
+          <Button to={"/liveStreaming"} buyTicket size="big">
             Comprar boleto ahora
           </Button>
         </div>

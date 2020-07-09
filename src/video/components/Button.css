@@ -1,9 +1,8 @@
 .button {
-  padding: 6px 12px;
+  padding: 8px 16px;
   background: rgba(200, 200, 200, 0);
   color: white;
   cursor: pointer;
-  margin: 10px auto;
   text-decoration: none;
   /* display: inline-block; */
   /* width: 75%; */
@@ -47,7 +46,7 @@
 
 .button--whatsapp {
   text-decoration: none;
-  /* width: 80%; */
+  /* width: 810%; */
   color: #20f82a;
   /* background: rgb(13, 237, 143);
   background: linear-gradient(
@@ -56,7 +55,7 @@
     rgba(19, 159, 41, 1) 100%
   );
   border-color: #3feb47; */
-  border: 5px solid #20f82a;
+  border: 3px solid #20f82a;
 }
 
 .button--whatsapp:hover,
@@ -69,13 +68,12 @@
     rgb(13, 182, 111) 0%,
     rgb(9, 202, 38) 100%
   );
-  
 }
 
 .button--buyTicket {
   text-decoration: none;
   color: #20f82a;
-   /* background: rgba(25, 236, 5, 0.5);  */
+  /* background: rgba(25, 236, 5, 0.5);  */
   /* /*
   background: linear-gradient(
     200deg,
@@ -83,7 +81,7 @@
     rgb(180, 108, 13) 51%,
     rgba(251, 6, 6, 1) 100%
   ); */
-  border: 5px solid #20f82a;
+  border: 3px solid #20f82a;
 }
 
 .button--buyTicket:hover,
@@ -114,7 +112,7 @@
 }
 
 .button--big {
-  font-size: 1.25rem;
+  font-size: 0.86rem;
 }
 
 .button--float {
