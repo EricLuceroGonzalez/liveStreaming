@@ -1,11 +1,9 @@
 .button {
-  padding: 8px 16px;
+  padding: 8px auto;
   background: rgba(200, 200, 200, 0);
   color: white;
   cursor: pointer;
   text-decoration: none;
-  /* display: inline-block; */
-  /* width: 75%; */
   border-radius: 25px;
   text-align: center;
   font-family: AlegreyaSansSC-BoldItalic;
@@ -112,7 +110,7 @@
 }
 
 .button--big {
-  font-size: 0.86rem;
+  font-size: 0.75rem;
 }
 
 .button--float {

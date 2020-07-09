@@ -9,7 +9,7 @@ const Button = (props) => {
   if (props.href) {
     return (
       <a
-        className={`button button--${props.size || "default"} ${
+        className={`button--${props.size || "default"} ${
           props.inverse && "button--inverse"
         } ${props.whatsapp && "button--whatsapp"}`}
         href={props.href}
@@ -22,7 +22,7 @@ const Button = (props) => {
   if (props.floating) {
     return (
       <a
-        className={`button ${props.inverse && "button--inverse"} ${
+        className={` ${props.inverse && "button--inverse"} ${
           props.floating && "button--float"
         }`}
         href={`https://api.whatsapp.com/send?phone=${props.contactPhone}&text=Hola,%20me%20gustaria%20comprar%20un%20boleto!`}
@@ -42,9 +42,6 @@ const Button = (props) => {
       <Link
         to={props.to}
         exact={props.exact}
-        className={`button button--${props.size || "default"} ${
-          props.inverse && "button--inverse"
-        } ${props.buyTicket && "button--buyTicket"}  col-12 col-sm-10`}
       >
         {props.children}
       </Link>
@@ -52,9 +49,8 @@ const Button = (props) => {
   }
   return (
     <button
-      className={`button button--${props.size || "default"} ${
-        props.inverse && "button--inverse"
-      } ${props.danger && "button--danger"}`}
+      className={`
+      ${props.myClasses}`}
       type={props.type}
       onClick={props.onClick}
       disabled={props.disabled}
