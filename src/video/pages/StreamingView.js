@@ -8,10 +8,10 @@ const StreamingView = () => {
     <React.Fragment>
       <div className="col-12 mt-4 p-1">
         <ImageBar />
-<div className='col-10 justify-content-start'>
-<Streaming />
-<ButtonBox />
-</div>
+        <div className="col-10 justify-content-start">
+          <Streaming />
+          <ButtonBox />
+        </div>
       </div>
     </React.Fragment>
   );
