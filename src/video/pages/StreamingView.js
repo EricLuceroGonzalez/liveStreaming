@@ -6,10 +6,12 @@ import ImageBar from "../components/ImageBar";
 const StreamingView = () => {
   return (
     <React.Fragment>
-      <div className="mt-4 p-3">
+      <div className="col-12 mt-4 p-1">
         <ImageBar />
-        <Streaming />
-        <ButtonBox />
+<div className='col-10 justify-content-start'>
+<Streaming />
+<ButtonBox />
+</div>
       </div>
     </React.Fragment>
   );
