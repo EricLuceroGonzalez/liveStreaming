@@ -9,9 +9,9 @@ const Streaming = () => {
   );
   return (
     <React.Fragment>
-      <div className="d-flex">
+      <div className="d-flex justify-content-around">
         <div className="col-10">
-          <div className="myStreaming pr-5 pt-2">
+          <div className="myStreaming pt-2">
             <div className="mr-auto ml-auto embed-responsive embed-responsive-16by9 col-12 col-lg-10">
               <video controls>
                 <source src={liveVideo} type="video/mp4"></source>

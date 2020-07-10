@@ -14,7 +14,7 @@ const ImageVertical = () => {
 
   return (
     <React.Fragment>
-      <div className="col-12 mr-auto ml-auto">
+      <div className="col-2 mr-auto ml-auto">
         <img
           width="auto"
           height="auto"
