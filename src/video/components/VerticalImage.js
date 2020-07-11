@@ -14,14 +14,12 @@ const ImageVertical = () => {
 
   return (
     <React.Fragment>
-      <div className="col-2 mr-auto ml-auto">
         <img
-          width="auto"
+          width="100%"
           height="auto"
           src={bannerVertical}
           alt="show label"
         ></img>
-      </div>
     </React.Fragment>
   );
 };

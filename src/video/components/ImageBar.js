@@ -13,7 +13,7 @@ const ImageBar = () => {
 
   return (
     <React.Fragment>
-      <div className="col-10 mr-auto ml-auto">
+      <div className="col-12 mr-auto ml-auto">
           <img width='100%' height='auto'
           src={banner} alt="show label"></img>
       </div>

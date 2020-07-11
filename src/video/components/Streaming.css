@@ -1,8 +1,6 @@
 .myStreaming {
-  text-align: center;
-  margin-top: 0.75em;
-  margin-right: auto;
+  text-align: end;
   background-color: black;
-  border: 1px solid red;
-  min-width: 70%;
+  border: 1px solid rgba(255, 10, 10, 0.5);
+  /* min-width/: 70%; */
 }
