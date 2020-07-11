@@ -10,10 +10,10 @@ const StreamingView = () => {
       <div className="col-12 mt-3">
         <ImageBar />
         <div className="d-flex mt-4 justify-content-center">
-          <div className="col-7 justify-content-end">
+          <div className="col-6 col-sm-8 justify-content-end">
             <Streaming />
           </div>
-          <div className="col-2">
+          <div className="col-4 col-sm-2">
             <ImageVertical />
             <ButtonBox />
           </div>

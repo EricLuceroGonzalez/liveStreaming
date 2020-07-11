@@ -10,7 +10,7 @@ const Streaming = () => {
     <React.Fragment>
       <div className="myStreaming ">
         <div className="ml-auto embed-responsive embed-responsive-16by9">
-          <video controls>
+          <video controls autoPlay>
             <source src={liveVideo} type="video/mp4"></source>
             Your browser does not support the video tag.
           </video>
