@@ -9,17 +9,11 @@ const StreamingView = () => {
     <React.Fragment>
       <div className="col-12 mt-3">
         <ImageBar />
-        <div
-          className="d-flex justify-content-center"
-          style={{ border: "2px dashed gray" }}
-        >
-          <div
-            className="col-10 justify-content-end"
-            style={{ border: "1px dashed blue" }}
-          >
+        <div className="d-flex justify-content-center">
+          <div className="col-7 justify-content-end">
             <Streaming />
           </div>
-          <div className="col-2" style={{ border: "2px dashed green" }}>
+          <div className="col-2">
             <ImageVertical />
             <ButtonBox />
           </div>
@@ -34,4 +28,4 @@ export default StreamingView;
 // <div className="col-2">
 // <ImageVertical />
 // </div>
-// 
+//

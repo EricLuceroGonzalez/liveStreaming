@@ -6,7 +6,7 @@ const ButtonBox = () => {
   const history = useHistory();
   return (
     <React.Fragment>
-      <div className="mt-1 row d-flex ">
+      <div className="mt-5 row d-flex ">
         <div className="col-12 bordea d-flex justify-content-center">
           <Button
             myClasses="btn btn-outline-danger"
