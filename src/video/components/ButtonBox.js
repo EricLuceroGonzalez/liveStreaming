@@ -6,20 +6,20 @@ const ButtonBox = () => {
   const history = useHistory();
   return (
     <React.Fragment>
-      <div className="mt-1 row d-flex justify-content-center">
-        <div className="col-12 bordea d-flex justify-content-around">
+      <div className="mt-1 row d-flex ">
+        <div className="col-12 bordea d-flex justify-content-center">
           <Button
             myClasses="btn btn-outline-danger"
             onClick={() => history.push("https://wa.link/aykk0m")}
             size="big"
           >
-            WhatsApp
+            Chatear por WhatsApp
           </Button>
         </div>
-        <div className="col-12 bordea d-flex justify-content-around">
+        <div className="col-12 bordea d-flex justify-content-center">
           <Button
             type="button"
-            myClasses="btn btn-outline-danger mr-auto"
+            myClasses="btn btn-outline-danger"
             onClick={() => history.push("/liveStreaming")}
             size="big"
           >
