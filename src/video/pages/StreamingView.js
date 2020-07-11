@@ -9,7 +9,7 @@ const StreamingView = () => {
     <React.Fragment>
       <div className="col-12 mt-3">
         <ImageBar />
-        <div className="d-flex justify-content-center">
+        <div className="d-flex mt-4 justify-content-center">
           <div className="col-7 justify-content-end">
             <Streaming />
           </div>

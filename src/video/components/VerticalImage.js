@@ -15,6 +15,7 @@ const ImageVertical = () => {
   return (
     <React.Fragment>
         <img
+        className='mb-2'
           width="100%"
           height="auto"
           src={bannerVertical}
