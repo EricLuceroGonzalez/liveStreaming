@@ -31,8 +31,50 @@
     <title>Taki TV |</title>
   </head>
   <body>
+    <!-- <script
+    language="JavaScript"
+    type="text/javascript"
+    src="//play.streamingvideoprovider.com/js/vapp.js"
+  ></script>
+  
+  <script language="JavaScript">
+    var vapp = new VappController(
+      {
+        use_div: "dplayer_flash_3ojwirdhlzs4",
+        player_width: "720",
+        player_height: "800",
+      },
+      {
+        clip_id: "2690740",
+        player_id: "46DIIE2FICI3GGC",
+        playlist_id: "1682",
+        transparent: "1",
+        uk: "7b09d9855c88f93326d9b03ca949d985",
+        live_id: "3ojwirdhlzs4",
+        sel_playlist: "",
+        sel_multiplaylist: "",
+        use_html5: "true",
+        layout: "default",
+        theme: "light",
+        is_responsive: "1",
+        is_inversed: "",
+        is_vertical: "",
+        one_thumb_per_row: "",
+        thumbs_size: "medium",
+        disable_hash: "",
+        widget_height_behavior: "0",
+        hide_playlist: "1",
+        hide_live_chat: "",
+        hide_description: "",
+        playlist_position: "",
+        chat_position: "",
+        description_position: "",
+      }
+    );
+  </script> -->
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <div id="div-stream"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -43,5 +85,66 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <!--player code begin-->
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="//play.streamingvideoprovider.com/js/dplayer.js"
+    ></script>
+    <script language="javascript">
+      // <!--
+      var vars = {
+        clip_id: "7gakq63hnog0",
+        transparent: "true",
+        pause: "1",
+        repeat: "",
+        bg_color: "#ffffff",
+        fs_mode: "2",
+        no_controls: "",
+        start_img: "0",
+        start_volume: "100",
+        close_button: "",
+        brand_new_window: "1",
+        auto_hide: "1",
+        stretch_video: "",
+        player_align: "NONE",
+        offset_x: "0",
+        offset_y: "0",
+        player_color_ratio: 0.6,
+        skinAlpha: "50",
+        colorBase: "#250864",
+        colorIcon: "#ffffff",
+        colorHighlight: "#7f54f8",
+        direct: "false",
+        is_responsive: "true",
+        viewers_limit: 0,
+        cc_position: "bottom",
+        cc_positionOffset: 70,
+        cc_multiplier: 0.03,
+        cc_textColor: "#ffffff",
+        cc_textOutlineColor: "#ffffff",
+        cc_bkgColor: "#000000",
+        cc_bkgAlpha: 0.1,
+        aspect_ratio: "16:9",
+        play_button: "1",
+        play_button_style: "pulsing",
+        sleek_player: "1",
+      };
+      var svp_player = new SVPDynamicPlayer(
+        "div-stream",
+        "",
+        "80%",
+        "80%",
+        // { use_div: "div-stream", skin: "3" },
+        vars
+      );
+      // svp_player.execute();
+      //-->
+    </script>
+    <noscript
+      >Your browser does not support JavaScript! JavaScript is needed to display
+      this video player.</noscript
+    >
+    <!--player code end-->
   </body>
 </html>

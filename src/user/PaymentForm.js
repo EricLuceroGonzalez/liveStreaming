@@ -9,11 +9,14 @@ import {
 } from "../shared/validators";
 import { useForm } from "../shared/hooks/form-hook";
 import Card from "../shared/UIElements/Card";
+import { useHttpClient } from "../shared/hooks/http-hook";
+
 const PaymentForm = () => {
+  const { isLoading, error, sendRequest, clearError } = useHttpClient();
   const [focus, setFocus] = useState("");
   const [expiry, setExpiry] = useState("");
   const [cardType, setCardType] = useState("");
-  const [formValid, setFormValid] = useState(false);
+  const [formValid, setFormValid] = useState(true);
 
   // To manage multiple states (changing) as the title input and others inputs changing
   // INITIAL STATE -->> function copied to form-hooks
@@ -29,6 +32,10 @@ const PaymentForm = () => {
         isValid: false,
       },
       lastName: {
+        value: "",
+        isValid: false,
+      },
+      phone: {
         value: "",
         isValid: false,
       },
@@ -68,8 +75,74 @@ const PaymentForm = () => {
     formData.append("expYear", formState.inputs.expYear.value);
     formData.append("cvv", formState.inputs.cvv.value);
 
-    e.preventDefault();
+    let payload = 
+      {
+        "cclw": "9658182B95FC7E8FE5C5386BCD5E9BCCE2FABED4A71ED5536C4061BEB45AA2F67158527FE42CF10746B6758380D79B95B66FCF809474D8BC7D4D4C6B6B940689",
+        "amount": 4.25,
+        "taxAmount": 1,
+        "email": formState.inputs.email.value,
+        "phone": formState.inputs.phone.value,
+        "address": "testing new address",
+        "concept": "Nro-Order-526",
+        "description": "Nro-Order-526",
+        "lang": "ES",
+        "customFieldValues": [
+            {
+                "id": "idOrder",
+                "nameOrLabel": "Nro de Orden",
+                "value": "OD-234567"
+            },
+            {
+                "id": "idUser",
+                "nameOrLabel": "User",
+                "value": "24"
+            },
+            {
+                "id": "idTx",
+                "nameOrLabel": "EricTesting",
+                "value": "678643"
+            },
+            {
+                "id": "reference",
+                "nameOrLabel": "Referencia",
+                "value": "6754"
+            },
+            {
+                "id": "activo",
+                "nameOrLabel": "estado",
+                "value": "true"
+            }
+        ],
+        "cardInformation": {
+          "cardNumber": "4059310181757001",
+            "expMonth": formState.inputs.expMonth.value,
+            "expYear": formState.inputs.expYear.value,
+            "cvv": formState.inputs.cvv.value,
+            "firstName": formState.inputs.firstName.value,
+            "lastName": formState.inputs.lastName.value,
+            "cardType": "VISA"
+        }
+    }
+    
+    console.log(payload);
 
+    e.preventDefault();
+    try {
+      // Start the HTTP request + set the Authorization token
+      let sendPay = await sendRequest(
+        "https://sandbox.paguelofacil.com/rest/processTx/AUTH_CAPTURE",
+        "POST",
+        JSON.stringify(payload),
+        {
+          "authorization":
+            "WT5hTaUcpa4J3h4AmrZa2EXXJs8boUVa|DIRd852djHbq2j5Fca5VDUkDbExTBCVf",
+          "Content-Type": "application/json",
+        }
+      );
+      // Redirect the user to different page
+      // history.push("/");
+      console.log(sendPay);
+    } catch (err) {}
     console.log(formState.inputs.number.value);
     console.log(formState.inputs.expMonth.value);
     console.log(formState.inputs.expYear.value);
