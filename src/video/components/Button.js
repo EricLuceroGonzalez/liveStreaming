@@ -19,6 +19,19 @@ const Button = (props) => {
       </a>
     );
   }
+  if (props.buyTicket) {
+    return (
+      <a
+        className={`button--${props.size || "default"} ${
+          props.inverse && "button--inverse"
+        } ${props.myClasses}`}
+        href={props.srcTicket}
+        target="_blank"
+      >
+        {props.children}
+      </a>
+    );
+  }
   if (props.floating) {
     return (
       <a
